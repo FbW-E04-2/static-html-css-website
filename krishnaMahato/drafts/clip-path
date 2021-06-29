@@ -1,2 +1,21 @@
     -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+    
+    
+    
+    git:
+    git checkout -b <newbranchname>
+    git switch testing-branch
+    
+    Create a new branch and switch to it: git switch -c new-branch
+    The -c flag stands for create, you can also use the full flag: --create
+
+    Return to your previously checked out branch: git switch -	
+
+    merge
+    $ git checkout master
+    $ git merge hotfix
+    
+    delete:
+    $ git branch -d hotfix
+Deleted branch hotfix (3a0874c).
