@@ -83,7 +83,8 @@ body {
       }
       .head-banner .logo {
           width: 10em;
-          margin-left: 50px;
+          margin-left: 5%;
+          
       }
       .nav-links li a {
           font-size: 1.5rem;
@@ -269,51 +270,127 @@ body {
             color: #FFF;
         }
             
-        .btn-spec:hover{
+        .main-3 .btn-spec:hover{
             transform: scale(0.9);
             opacity: 0.9;
         }
 
 
-        /* footer clip-path: polygon(0 47%, 100% 25%, 100% 100%, 0 100%); */
+        /* footer  */
         
            .footer-container{
                max-width: 100%;
                display: grid;
+               align-items: center;
                grid-template-columns: 1fr 1fr 1fr;
-               grid-template-rows: 1fr 1fr;
-               justify-items: center;
+               grid-template-rows: 80% 20%;
                height: 550px;
-               width: 100%;
                background: linear-gradient(93deg, rgba(10,16,23,1) 0%, rgba(62,141,219,1) 67%);
                clip-path: polygon(0 0, 100% 37%, 100% 100%, 0 100%);
-           }
+            }
+               
+               
            .footer-container .book {
                grid-column: 1/3;
                margin-top: 3em;
                color: var(--white-1);
-               font-size:3rem;
+               font-size:2.3rem;
+               line-height: 1.5em;
                font-weight:200;
-               align-self: center;
-               border: 1px solid black;
-           }
+               text-align: center;
+            }
+            
+              
 
            .footer-container .s-media {
             grid-column: 3/4;
-            border: 1px solid black;
+            margin-top: 12em;
+            color: var(--white-1);
+            font-size:1.6rem;
+            line-height: 1.5em;
+            font-weight:200;
+            text-align: start;
            }
+            
+            
+           
+           .footer-container .s-media a {
+               color:var(--white-1);
+               text-transform: uppercase;
+               
+           }
+           .footer-container .s-media i {
+               margin: 0 1em;
+           }
+            
+
            .footer-container .copy-right {
                grid-column:1/4;
-               border: 1px solid black;
-              
+               text-align: center;
+               color: var(--white-2);
+               font-size: 1.3rem;
+               font-weight: 200;
             }
-              
+
+            /* button header and footer  */
+            .btn {
+                margin-top: 1.8em;
+                line-height: 50px;
+                height: 50px;
+                text-align: center;
+                width: 250px;
+                cursor: pointer;
+              }
+                
+              .btn-foot {
+                
+                color: #FFF;
+                transition: all 0.5s;
+                position: relative;
+              }
+              .btn-last {
+                margin-left: 450px;
+              }
+              .btn-head {
+                  margin-left: 80px;
+                  color: #CCC;
+              }
+              .btn-foot::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background-color: #2176ff1c;
+                transition: all 0.3s;
+              }
+              .btn-foot:hover::before {
+                opacity: 0 ;
+                transform: scale(0.5,0.5);
+              }
+              .btn-foot::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                opacity: 0;
+                transition: all 0.3s;
+                border: 1px solid rgba(255,255,255,0.5);
+                transform: scale(1.2,1.2);
+              }
+              .btn-foot:hover::after {
+                opacity: 1;
+                transform: scale(1,1);
+              }
         
-            
-      
+            /* The End  */
        
-
-
+            
             
             
 
